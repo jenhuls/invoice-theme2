@@ -1,0 +1,51 @@
+/******************************************************************
+
+Stylesheet: Print Stylesheet
+
+This is the print stylesheet. There's probably not a lot
+of reasons to edit this stylesheet. 
+
+Remember to add things that won't make sense to print at 
+the bottom. Things like nav, ads, and forms shouldbe set 
+to display none.
+******************************************************************/
+@media print {
+	* {
+	  -webkit-font-smoothing: antialiased;
+	  -moz-osx-font-smoothing: grayscale;
+	}
+	
+	body {
+		color: #555;
+	}
+	
+	#invoice__template #header__section small {
+	    color: #EEB94E;
+	    font-weight: 600;
+	    font-size: 13px;
+	    line-height: 1;
+	    letter-spacing: .04rem;
+	}
+	
+	.hide-for-print {
+		display: none;
+	}
+	#services__section {
+		margin-left: 0;
+	}
+
+    @page {
+      margin: 0;
+    }
+
+    p, h2, h3 {
+      orphans: 3;
+      widows: 3;
+    }
+
+    h2,
+    h3 {
+      page-break-after: avoid;
+    }
+    
+} // End of media query

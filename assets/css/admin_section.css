@@ -1,0 +1,27 @@
+td.invoice_status span {
+	color: #fff;
+	border-radius:3px;
+	padding:5px;
+	text-align: center;
+	vertical-align: middle;
+	text-transform: uppercase;
+	font-weight: bold;
+	width: 80px;
+	display: block;
+}
+.draft {
+	background: #ccc;
+}
+.unpaid {
+	background: #ffd160;    
+}
+.paid {
+	background: #8dc63f;    
+}
+.overdue {
+	background: #990000;    
+}
+.acf-fields > .acf-field.client-section,
+.acf-fields > .acf-field.services-section {
+	background: #efefef !important;
+}
